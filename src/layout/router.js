@@ -8,7 +8,7 @@ import Layout from "./Layout";
 import Home from "./Home";
 
 import Page1 from "./../page/page1.js";
-import Page2 from "./../page/page2.js";
+import Form from "./../page/Form.js";
 
 
 const router = createBrowserRouter([
@@ -20,14 +20,15 @@ const router = createBrowserRouter([
             {
                 path: "home",
                 element: <Home />,
+                description:"德斯德基"
             },  
             {
                 path: "page1",
                 element: <Page1 />,
             },
             {
-                path: "page2",
-                element: <Page2 />,
+                path: "form",
+                element: <Form />,
             },
         ]
 

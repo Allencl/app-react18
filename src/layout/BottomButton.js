@@ -31,7 +31,7 @@ export default function AppBottomNavigation() {
                                 navigate('/home',{state:{name:'home'}})
                                 break;
                             case 2:
-                                navigate('/page2',{state:{name:'222'}})
+                                navigate('/form',{state:{name:'222'}})
                                 break;                        
                             default:
                                 break;

@@ -1,4 +1,5 @@
-import {useNavigate} from "react-router-dom";
+import React, {useEffect } from 'react';
+import {useNavigate,useLocation} from "react-router-dom";
 
 
 import AppBar from '@mui/material/AppBar';
@@ -13,6 +14,11 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 export default function AppTopBarNavigation() {
     const navigate = useNavigate();
+    const location = useLocation();
+
+    useEffect(() => {
+        // console.log(location)
+    },[location]);
 
     return <>
         <Box sx={{ flexGrow: 1 }}>
