@@ -25,13 +25,13 @@ export default function AppBottomNavigation() {
 
                         switch (newValue) {
                             case 0:
-                                navigate('/page1',{replace:true,state:{name:'1111'}})
+                                navigate('/page1',{state:{name:'1111'}})
                                 break;
                             case 1:
-                                navigate('/home',{replace:true,state:{name:'home'}})
+                                navigate('/home',{state:{name:'home'}})
                                 break;
                             case 2:
-                                navigate('/page2',{replace:true,state:{name:'222'}})
+                                navigate('/page2',{state:{name:'222'}})
                                 break;                        
                             default:
                                 break;

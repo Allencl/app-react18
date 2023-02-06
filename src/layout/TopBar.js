@@ -1,12 +1,19 @@
+import {useNavigate} from "react-router-dom";
+
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+
+
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 export default function AppTopBarNavigation() {
+    const navigate = useNavigate();
+
     return <>
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="fixed">
@@ -17,8 +24,11 @@ export default function AppTopBarNavigation() {
                         color="inherit"
                         aria-label="menu"
                         sx={{ mr: 2 }}
+                        onClick={()=>{
+                            navigate(-1);
+                        }}
                     >
-                        <MenuIcon />
+                        <NavigateBeforeIcon />
                     </IconButton>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     News
